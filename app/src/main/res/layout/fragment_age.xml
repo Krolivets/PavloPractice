@@ -75,10 +75,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Enter your Address"
-            android:inputType="number" />
+            android:inputType="text" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/spCountries"
         android:layout_marginHorizontal="@dimen/default_margin"
         android:layout_marginTop="@dimen/default_margin"
         android:layout_width="match_parent"

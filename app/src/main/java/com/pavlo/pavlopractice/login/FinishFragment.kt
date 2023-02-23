@@ -21,7 +21,7 @@ class FinishFragment : Fragment(R.layout.fragment_finish) {
         with(binding) {
             resultFirstName.text = args.user.firstName
             resultLastName.text = args.user.lastName
-            resultAge.text = args.user.age.toString()
+            resultAge.text = args.user.age
             resultAddress.text = args.user.address
         }
     }

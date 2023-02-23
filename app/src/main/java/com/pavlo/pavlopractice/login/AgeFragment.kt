@@ -2,6 +2,8 @@ package com.pavlo.pavlopractice.login
 
 import android.os.Bundle
 import android.view.View
+import android.widget.AdapterView
+import android.widget.Spinner
 import androidx.core.widget.doOnTextChanged
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
@@ -20,12 +22,10 @@ class AgeFragment : Fragment(R.layout.fragment_age) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         setFirstLastNames()
         setEditTextListeners()
         setBtnFinishListener()
     }
-
     private fun setFirstLastNames() {
         with(binding) {
             tvFirstName.text = args.firstName
