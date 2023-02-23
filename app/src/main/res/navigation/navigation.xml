@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/featureListFragment">
+
+    <fragment
+        android:id="@+id/featureListFragment"
+        android:name="com.pavlo.pavlopractice.featurelist.FeatureListFragment"
+        android:label="FeatureListFragment">
+        <action
+            android:id="@+id/action_featureListFragment_to_counterFragment"
+            app:destination="@id/counterFragment" />
+        <action
+            android:id="@+id/action_featureListFragment_to_viewPagerFragment"
+            app:destination="@id/viewPagerFragment" />
+        <action
+            android:id="@+id/action_featureListFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/counterFragment"
+        android:name="com.pavlo.pavlopractice.demo.viewmodel.CounterFragment"
+        android:label="CounterFragment" />
+    <fragment
+        android:id="@+id/viewPagerFragment"
+        android:name="com.pavlo.pavlopractice.viewpager.ViewPagerFragment"
+        android:label="ViewPagerFragment" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.pavlo.pavlopractice.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_ageFragment"
+            app:destination="@id/ageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ageFragment"
+        android:name="com.pavlo.pavlopractice.login.AgeFragment"
+        android:label="fragment_age"
+        tools:layout="@layout/fragment_age">
+        <action
+            android:id="@+id/action_ageFragment_to_finishFragment"
+            app:destination="@id/finishFragment" />
+        <argument
+            android:name="firstName"
+            app:argType="string" />
+        <argument
+            android:name="lastName"
+            app:argType="string" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/finishFragment"
+        android:name="com.pavlo.pavlopractice.login.FinishFragment"
+        android:label="fragment_finish"
+        tools:layout="@layout/fragment_finish">
+        <argument
+            android:name="user"
+            app:argType="com.pavlo.pavlopractice.models.User" />
+    </fragment>
+</navigation>

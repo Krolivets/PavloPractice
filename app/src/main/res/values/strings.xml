@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">PavloPractice</string>
+    <string name="feature_list_fragment">Feature List Fragment</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="navigate_next">navigate next</string>
+    <string name="features">Features</string>
+    <string name="viewModel_demo_counter">ViewModel demo: Counter</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_view_id_example">1</string>
+    <string name="tab_layout">TabLayout</string>
+
+    <string-array name="countriesArray">
+        <item>USA</item>
+        <item>UK</item>
+        <item>Ukraine</item>
+        <item>Poland</item>
+    </string-array>
+</resources>

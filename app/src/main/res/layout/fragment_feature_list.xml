@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".featurelist.FeatureListFragment"
+    android:id="@+id/llFeatureListContainer">
+
+    <TextView
+        android:id="@+id/tvFeaturesList"
+        android:layout_marginStart="@dimen/half_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/half_margin"
+        android:layout_marginEnd="@dimen/half_margin"
+        android:gravity="center"
+        android:text="@string/features"
+        android:textColor="@color/black"
+        android:textSize="@dimen/default_font_size"
+        android:background="@color/yellow"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvItems"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/recyclerview_item" />
+</LinearLayout>
